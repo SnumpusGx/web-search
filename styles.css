@@ -80,6 +80,18 @@ input[type="text"] {
     background-position: 1.4%;
 }
 
+@media (max-width: 768px) {
+    h1 {
+        font-size: 70px;
+        text-align: center;
+    }
+    input[type='text'] {
+        width: 90%;
+        background-size: 3.5%;
+        background-position: 3%
+    }
+}
+
 .buttons {
     margin-top: 20px;
     display: flex;
