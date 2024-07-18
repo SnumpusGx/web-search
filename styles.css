@@ -1,5 +1,5 @@
 body {
-    background-image: url('../assets/images/default_wallpaper.jpg');
+    background-image: url('./assets/images/default_wallpaper.jpg');
     background-size: cover;
     background-position: center;
     background-color: rgba(0, 0, 0, 0.6);
@@ -23,28 +23,28 @@ body {
 
 @font-face {
     font-family: 'Moderniz';
-    src: url('../assets/fonts/Moderniz.otf') format('opentype');
+    src: url('./assets/fonts/Moderniz.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'AllenSans';
-    src: url('../assets/fonts/AllenSans-Regular.ttf') format('truetype');
+    src: url('./assets/fonts/AllenSans-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'AllenSans';
-    src: url('../assets/fonts/AllenSans-Bold.ttf') format('truetype');
+    src: url('./assets/fonts/AllenSans-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'AllenSans';
-    src: url('../assets/fonts/AllenSans-Light.ttf') format('truetype');
+    src: url('./assets/fonts/AllenSans-Light.ttf') format('truetype');
     font-weight: normal;
     font-style: light;
 }
@@ -72,7 +72,7 @@ input[type="text"], .searchQuery {
     box-sizing: border-box;
     border-radius: 5px;
     outline: none;
-    background-image: url('../assets/images/search-icon.png');
+    background-image: url('./assets/images/search-icon.png');
     background-size: 2.7%;
     background-repeat: no-repeat;
     background-position: 1.4%;
@@ -114,35 +114,35 @@ footer {
 }
 
 .buttons button[data-engine='google'] {
-    background-image: url('../assets/images/google-icon.png');
+    background-image: url('./assets/images/google-icon.png');
     background-size: 20px;
     background-repeat: no-repeat;
     background-position: 13% 50%;
 }
 
 .buttons button[data-engine='bing'] {
-  background-image: url('../assets/images/bing-icon.png');
+  background-image: url('./assets/images/bing-icon.png');
   background-size: 16px;
   background-repeat: no-repeat;
   background-position: 18% 50%;
 }
 
 .buttons button[data-engine='youtube'] {
-    background-image: url('../assets/images/youtube-icon.png');
+    background-image: url('./assets/images/youtube-icon.png');
     background-size: 45px;
     background-repeat: no-repeat;
     background-position: 0% 50%;
 }
 
 .buttons button[data-engine='duckduckgo'] {
-    background-image: url('../assets/images/duckduckgo-icon.png');
+    background-image: url('./assets/images/duckduckgo-icon.png');
     background-size: 25px;
     background-repeat: no-repeat;
     background-position: 7% 50%;
 }
 
 .buttons button[data-engine='brave'] {
-    background-image: url('../assets/images/brave-icon.png');
+    background-image: url('./assets/images/brave-icon.png');
     background-size: 35px;
     background-repeat: no-repeat;
     background-position: 8% 50%;
