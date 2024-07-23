@@ -3,9 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const queryInput = document.getElementById('searchQuery');
     const buttons = form.querySelectorAll('button[data-engine]');
 
-    const body = document.querySelector('body');
-    body.classList.add('loaded');
-
     queryInput.addEventListener('keydown', function(event) {
         if (event.keyCode === 13) {
             event.preventDefault(); 
