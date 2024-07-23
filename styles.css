@@ -5,7 +5,7 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: darken;
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: 'Jost', Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -22,36 +22,29 @@ body {
 }
 
 @font-face {
-    font-family: 'Moderniz';
-    src: url('./assets/fonts/Moderniz.otf') format('opentype');
+    font-family: 'Jost';
+    src: url('./assets/fonts/Jost-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'AllenSans';
-    src: url('./assets/fonts/AllenSans-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'AllenSans';
-    src: url('./assets/fonts/AllenSans-Bold.ttf') format('truetype');
+    font-family: 'Jost';
+    src: url('./assets/fonts/Jost-SemiBold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'AllenSans';
-    src: url('./assets/fonts/AllenSans-Light.ttf') format('truetype');
+    font-family: 'Jost';
+    src: url('./assets/fonts/Jost-Light.ttf') format('truetype');
     font-weight: normal;
     font-style: light;
 }
 
 h1 {
     margin-bottom: 20px;
-    font-family: 'AllenSans', bold;
+    font-family: 'Jost', bold;
     font-size: 80px;
 
 }
@@ -156,6 +149,8 @@ footer {
     cursor: pointer;
     font-size: 16px;
     border-radius: 5px;
+    font-family: 'Jost';
+    font-weight: bold;
 }
 
 
