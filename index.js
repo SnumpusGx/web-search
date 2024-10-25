@@ -13,7 +13,20 @@ document.addEventListener('DOMContentLoaded', function() {
     buttons.forEach(button => {
         button.addEventListener('click', function() {
             const query = queryInput.value;
-            if (!query) return alert('Por favor, digite algo na caixa de pesquisa.')
+            if (!query) {
+
+                buttons.forEach(e => { e.disabled = true; })
+                queryInput.value = "Insira algo na caixa de pesquisa para continuar."
+                queryInput.disabled = true;
+
+                setTimeout(() => {
+                    buttons.forEach(e => { e.disabled = false; })
+                    queryInput.value = "";
+                    queryInput.disabled = false;
+                }, 2000)
+
+                return;
+            }
 
             const engine = button.getAttribute('data-engine');
             let url;
@@ -31,8 +44,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 case 'duckduckgo':
                     url = `https://duckduckgo.com/?q=${encodeURIComponent(query)}`;
                     break;
-                case 'brave':
-                    url = `https://search.brave.com/search?q=${encodeURIComponent(query)}`;
+                case 'startpage':
+                    url = `https://startpage.com/do/search?q=${encodeURIComponent(query)}`;
                     break;
                 default:
                     return;

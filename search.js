@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('searchQuery');
     const buttons = form.querySelectorAll('button[data-engine]');
+    const queryInput = document.getElementById('query')
 
 function getQueryParam(param) {
     var urlParams = new URLSearchParams(window.location.search);
@@ -8,14 +9,16 @@ function getQueryParam(param) {
 }
 
 let query = getQueryParam('q');
-if (!query) query = 'Não fornecido.'
+if (!query) {
+        buttons.forEach(e => { e.disabled = true; })
+        query = "Não fornecido."
+        queryInput.disabled = true;
+}
 if (query) document.getElementById('query').textContent = query;
 
 // Função para redirecionar para o mecanismo de pesquisa escolhido
 buttons.forEach(button => {
     button.addEventListener('click', function() {
-        if (!query) return alert('Por favor, digite algo na caixa de pesquisa.')
-
         const engine = button.getAttribute('data-engine');
         let url;
 
@@ -32,8 +35,8 @@ buttons.forEach(button => {
             case 'duckduckgo':
                 url = `https://duckduckgo.com/?q=${encodeURIComponent(query)}`;
                 break;
-            case 'brave':
-                url = `https://search.brave.com/search?q=${encodeURIComponent(query)}`;
+            case 'startpage':
+                url = `https://startpage.com/do/search?q=${encodeURIComponent(query)}`;
                 break;
             default:
                 return;
